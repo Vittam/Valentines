@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffebf0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #d6336c;
+        }
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .surprise-button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .surprise-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #d6336c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Valentine's Day ❤️</h1>
+    <div class="heart">💖</div>
+
+    <button class="surprise-button" onclick="showMessage()">Click for a Surprise!</button>
+
+    <div class="surprise-message" id="message">
+        You are the most special person in my life! 💕  
+        <br> Wishing you all the love and happiness in the world!
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
+
